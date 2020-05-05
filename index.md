@@ -1,1 +1,5 @@
-Starting of web wit github
+    <div class="container">
+            
+            {{ content }}
+            
+            </div><!-- /.container -->
