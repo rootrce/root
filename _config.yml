@@ -1,4 +1,8 @@
 theme: jekyll-theme-hacker
-title: ROOTRCE
-description: Ethically Remote Command Execution.
+title: Ethically Remote Command Execution
+description: ./rootrce
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
 google_analytics:
