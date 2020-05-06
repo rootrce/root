@@ -6,6 +6,7 @@ title: Blog
 
 {% for file in site.static_files %}
   {% if file.extname == ".md" and file.path contains '/custom/' %} 
+  <h2><a href="{{ file.url }}">{{ post.title }}</a></h2>
    {{ file.name }}
   {% endif %}
 {% endfor %}
