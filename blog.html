@@ -11,9 +11,10 @@ title: Blog
 {% endfor %}
 
 
-{% assign htb = htb  %}
 <ul>
-  {% for article in htb site:collections %}
-    <li><a href="{{ article.url | relative_url }}">{{ article.title }}</a></li>
-  {% endfor %}
+	{% for item in site.htb limit:33 %}
+	{% if item.url contains 'articles' and item.url != '/htb/' and item.url != '/htb/' %}
+	<li><a href="{{ item.url }}">{{ item.headline }}</a></li>
+	{% endif %}
+	{% endfor %}
 </ul>
