@@ -4,9 +4,9 @@ title: Blog
 ---
 <h1>Latest Posts</h1>
 
-{% for file in site.custom %}
+{% for file in site.files %}
   {% if file.extname == ".md" and file.path contains '/custom/' %} 
-  <h2><a href="{{ custom.url }}">{{ post.title }}</a></h2>
+  <h2><a href="{{ files.url }}">{{ post.title }}</a></h2>
    {{ file.name }}
   {% endif %}
 {% endfor %}
