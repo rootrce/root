@@ -12,3 +12,12 @@ title: Ethically Remote Execution!
     </li>
   {% endfor %}
 </ul>
+
+<ul>
+  {% for htb in site.htb %}
+    <li>
+      <a href="{{ htb.url }}">{{ htb.title }}</a>
+      - {{ htb.headline }}
+    </li>
+  {% endfor %}
+</ul>
