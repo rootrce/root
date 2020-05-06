@@ -4,7 +4,7 @@ title: Blog
 ---
 <h1>Latest Posts</h1>
 
-{% for file in site.custom %}
+{% for file in site.htb %}
   {% if file.extname == ".md" %}
      * [{{ file.path }}]({{ site.baseurl }}{{ file.path }})
   {% endif %}
