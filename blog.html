@@ -4,7 +4,7 @@ title: Blog
 ---
 <h1>Latest Posts</h1>
 
-{% for file in site.files %}
+{% for file in site.custom %}
   {% if file.extname == ".md" and file.path contains '/custom/' %} 
   <h2><a href="{{ files.url }}">{{ post.title }}</a></h2>
    {{ file.name }}
