@@ -6,3 +6,5 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
 google_analytics:
+colllections:
+  htb:
