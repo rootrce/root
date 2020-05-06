@@ -13,7 +13,7 @@ title: Blog
 
 <ul>
 	{% for item in site.htb limit:33 %}
-	{% if item.url contains 'articles' and item.url != '/htb/' and item.url != '/htb/' %}
+	{% if item.url contains 'htb' %}
 	<li><a href="{{ item.url }}">{{ item.headline }}</a></li>
 	{% endif %}
 	{% endfor %}
