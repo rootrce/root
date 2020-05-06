@@ -1,20 +1,14 @@
 ---
-layout: default
-title: Blog
+layout: page
+title: "Hack The Box Hacking"
+permalink: "/:name/"
 ---
-<h1>Latest Posts</h1>
-
-{% for file in site.htb %}
-  {% if file.extname == ".md" %}
-     * [{{ file.path }}]({{ site.baseurl }}{{ file.path }})
-  {% endif %}
-{% endfor %}
-
 
 <ul>
-	{% for item in site.htb limit:33 %}
-	{% if item.url contains 'htb' %}
-	<li><a href="{{ item.url }}">{{ item.headline }}</a></li>
-	{% endif %}
-	{% endfor %}
+  {% for htb in site.htb %}
+    <li>
+      <a href="{{ htb.url }}">{{ htb.title }}</a>
+      - {{ htb.headline }}
+    </li>
+  {% endfor %}
 </ul>

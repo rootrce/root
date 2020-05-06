@@ -8,3 +8,5 @@ plugins:
 google_analytics:
 collections:
   htb:
+    output: true
+    permalink: /:name
