@@ -13,7 +13,7 @@ title: Blog
 
 {% assign htb = htb  %}
 <ul>
-  {% for article in htb limit:33 %}
+  {% for article in htb site:collections %}
     <li><a href="{{ article.url | relative_url }}">{{ article.title }}</a></li>
   {% endfor %}
 </ul>
