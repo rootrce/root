@@ -11,11 +11,9 @@ title: Blog
 {% endfor %}
 
 
+{% assign htb = htb  %}
 <ul>
-  {% for post in site.htb %}
-    <li>
-      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-      {{ post.excerpt }}
-    </li>
+  {% for article in htb limit:33 %}
+    <li><a href="{{ article.url | relative_url }}">{{ article.title }}</a></li>
   {% endfor %}
 </ul>
