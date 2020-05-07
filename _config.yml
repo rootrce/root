@@ -13,6 +13,7 @@ author:
   email:        rootrce@protonmail.com
 
 # Build settings
+markdown:       kramdown
 include:
   - _pages
 
