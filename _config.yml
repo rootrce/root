@@ -1,12 +1,40 @@
-theme: jekyll-theme-hacker
-title: Ethically Remote Command Execution
-description: ./rootrce
+# Site settings
+title:          ./rootrce
+description:    "Journey of Penetration Testing and Ethical Hacking"
+url:            "https://rootrce.github.io"
+
+# Google Analytics
+google_analytics: UA—XXXXXXXX-X
+
+# Author
+author:
+  name:         ROOT RCE
+  url:          https://rootrce.com
+  email:        rootrce@protonmail.com
+
+# Build settings
+markdown:       kramdown
+include:
+  - _pages
+
+# Assets
+sass:
+  sass_dir:     _sass
+  style:        compressed
+
+# Gems
 plugins:
   - jekyll-feed
-  - jekyll-sitemap
+  - jekyll-paginate
   - jekyll-seo-tag
-google_analytics:
-collections:
-  htb:
-    output: true
-    permalink: /:name
+  # - jemoji #Uncomment this to allow emoji in your post
+
+# Permalinks
+permalink:      /:title
+paginate:       5
+
+# Excludes
+exclude: [ Gemfile, Gemfile.lock, tale.gemspec ]
+
+# Disqus (Set to your disqus id)
+disqus:         jekyll-tale
