@@ -21,7 +21,7 @@ categories: cheatsheet
     
 
 
-##Privilege Escalation Tools
+#Privilege Escalation Tools
 **PowerUp:**
 https://raw.githubusercontent.com/PowerShellEmpire/PowerTools/master/PowerUp/PowerUp.ps1
 
