@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Windows privilege escalation cheatsheet"
+title: "Windows privilege escalation cheat sheet"
 categories: cheatsheet
 toc: true
 classes: wide
