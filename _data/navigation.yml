@@ -17,5 +17,9 @@
     url: /posts
   - title: "Categories"
     url: /category
-  - title: "Links"
-    url: /links.md
+  - title: "Cheat Sheet"
+    url: /cheatsheet
+    - title: "Links"
+    url: /links
+    - title: "About"
+    url: /about
