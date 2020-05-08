@@ -31,7 +31,7 @@ classes: wide
 3. [WinPeas](https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/tree/master/winPEAS)
 
 
-## Kernel Exploit Step
+## Kernel Exploit
 1. Find Windows Version with Command systeminfo.
 2. Search for exploit.
 3. Compile and run.
