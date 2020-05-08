@@ -12,10 +12,10 @@
 
   main:
   - title: "HTB"
-    url: /htb.md
+    url: /htb
   - title: "Posts"
-    url: /posts.md
+    url: /posts
   - title: "Categories"
-    url: /category.md
+    url: /category
   - title: "Links"
     url: /links.md
