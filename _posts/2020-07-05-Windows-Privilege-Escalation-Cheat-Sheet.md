@@ -1,7 +1,8 @@
 ---
-layout: post
+layout: single
 title: "Windows privilege escalation cheatsheet"
 categories: cheatsheet
+toc: true
 ---
 
 1. [Privilege Escalation Tools](#privilege-escalation-tools)
