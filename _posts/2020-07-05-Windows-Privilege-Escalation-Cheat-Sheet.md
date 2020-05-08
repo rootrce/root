@@ -3,8 +3,9 @@ layout: single
 title: "Windows privilege escalation cheatsheet"
 categories: cheatsheet
 toc: true
+class: wide 
 ---
-
+<!-- 
 1. [Privilege Escalation Tools](#privilege-escalation-tools)
 2. [Kernel Exploit](#kernel-exploit-step)
 3. [Exploit Services](#exploiting-services)
@@ -16,7 +17,7 @@ toc: true
 5. [Escalatiing With Passwords](#escalatiing-with-passwords)
 6. [Escalation with Schedule Task](#escalation-with-schedule-task)
 7. [Exploiting Installed Application](#exploiting-installed-application)
-8. [HotPotato](#hotpotato)
+8. [HotPotato](#hotpotato) -->
 
 
     
@@ -24,7 +25,7 @@ toc: true
 
 ## Privilege Escalation Tools
 **PowerUp:**
-https://raw.githubusercontent.com/PowerShellEmpire/PowerTools/master/PowerUp/PowerUp.ps1
+[1](https://raw.githubusercontent.com/PowerShellEmpire/PowerTools/master/PowerUp/PowerUp.ps1)
 
 **SharpUp**
 https://github.com/GhostPack/SharpUp
