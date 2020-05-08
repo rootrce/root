@@ -4,18 +4,18 @@ title: "Windows privilege escalation cheatsheet"
 categories: cheatsheet
 ---
 
-1. [Privilege Escalation Tools](##privilege-escalation-tools)
-2. [Kernel Exploit](##kernel-exploit-step)
-3. [Exploit Services](##exploiting-services)
-    1.  [Insecure Service Permission](###insecure-service-permission)
-    2.  [Unquoted Service Path](###unquoted-service-path)
-    3.  [Insecure Registry Permission](###insecure-registry-permission)
-    4.  [DLL Hijacking](###dLL-hijacking)
-4. [Exploiting Startup Program and AlwaysInstallElevated](##exploiting-startup-program-and-alwaysInstallelevated)
-5. [Escalatiing With Passwords](##escalatiing-with-passwords)
-6. [Escalation with Schedule Task](##escalation-with-schedule-task)
-7. [Exploiting Installed Application](##exploiting-installed-application)
-8. [HotPotato](##hotpotato)
+1. [Privilege Escalation Tools](#privilege-escalation-tools)
+2. [Kernel Exploit](#kernel-exploit-step)
+3. [Exploit Services](#exploiting-services)
+    1.  [Insecure Service Permission](#insecure-service-permission)
+    2.  [Unquoted Service Path](#unquoted-service-path)
+    3.  [Insecure Registry Permission](#insecure-registry-permission)
+    4.  [DLL Hijacking](#dLL-hijacking)
+4. [Exploiting Startup Program and AlwaysInstallElevated](#exploiting-startup-program-and-alwaysInstallelevated)
+5. [Escalatiing With Passwords](#escalatiing-with-passwords)
+6. [Escalation with Schedule Task](#escalation-with-schedule-task)
+7. [Exploiting Installed Application](#exploiting-installed-application)
+8. [HotPotato](#hotpotato)
 
 
     
