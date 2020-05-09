@@ -35,8 +35,9 @@ python3 setup.py
 ./wes.py --update
 ./wes.py info.txt
 ```
+Now search on google, github or exploit-db for exploits.
 
-Already compilied kernel exploits:
+Here is Already compilied kernel exploits:
 ```
 https://github.com/SecWiki/windows-kernel-exploits
 ```
