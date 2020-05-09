@@ -272,6 +272,7 @@ defaults:
   - scope:
       path: ""
       type: posts
+      class: wide
     values:
       layout: single
       author_profile: false
@@ -279,4 +280,3 @@ defaults:
       comments: true
       share: true
       related: true
-class: wide
