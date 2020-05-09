@@ -13,13 +13,7 @@
   main:
   - title: "HTB"
     url: /htb
-  - title: "Posts"
-    url: /posts.md
-  - title: "Categories"
-    url: /cat
-  - title: "Cheat Sheet"
-    url: /cheatsheet
-  - title: "Links"
-    url: /external-links
+  - title: "Win Privs Esc"
+    url: "/cheatsheet/Windows-Privilege-Escalation-Cheat-Sheet/"
   - title: "About"
     url: /about
