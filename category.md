@@ -1,4 +1,4 @@
 ---
-layout: categories
-Title: Categories
+layout: archive
+permalink: /categories/
 ---
