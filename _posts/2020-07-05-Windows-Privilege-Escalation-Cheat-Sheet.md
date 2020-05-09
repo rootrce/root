@@ -3,8 +3,6 @@ layout: single
 title: "Windows privilege escalation cheat sheet"
 categories: cheatsheet
 toc: true
-classes: wide
-
 ---
 
 ## Privilege Escalation Tools
