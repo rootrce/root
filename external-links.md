@@ -1,6 +1,5 @@
 ---
 layout: single
-permalink: /useful-links
 title: "Some Useful External Links about Penetesting!"
 ---
 

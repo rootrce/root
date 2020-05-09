@@ -4,9 +4,6 @@ title: About Me
 author_profile: true
 classes: wide
 ---
-
-# About Me
-
 Frankly, I just enjoy doing penetration testing. My penetration testing journey started in back 2010 with backtrack linux and by corelan buffer overflow tutorials. As i was doing self-study, i have read several books(including many programing books too) and most loved book was: 
 
 1. Hacking Exposed Books
