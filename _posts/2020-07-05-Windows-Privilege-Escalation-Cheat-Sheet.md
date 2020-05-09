@@ -4,7 +4,7 @@ title: "Windows privilege escalation cheat sheet"
 categories: cheatsheet
 toc: true
 toc_sticky: true
-classes: wide
+
 ---
 
 ## Privilege Escalation Tools
