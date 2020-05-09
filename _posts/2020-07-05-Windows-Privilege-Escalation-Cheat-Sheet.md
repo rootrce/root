@@ -4,6 +4,7 @@ title: "Windows privilege escalation cheat sheet"
 categories: cheatsheet
 toc: true
 toc_sticky: true
+classes: wide
 ---
 
 ## Privilege Escalation Tools
@@ -14,9 +15,10 @@ toc_sticky: true
 
 
 ## Kernel Exploit
-1. Find Windows Version with Command systeminfo.
-2. Search for exploit.
-3. Compile and run.
+1. Find Windows Version: ```systeminfo```.
+2. Search for exploit on github,exploitdb and google.
+3. Transfer to remote host.
+4. Compile and Run
 
 **Useful tools**
 Windows Exploit Suggester: 
@@ -24,7 +26,6 @@ Windows Exploit Suggester:
 https://github.com/bitsadmin/wesng
 ```
 
-**Usage:**
 First copy the full output of ```systeminfo``` from remote host and save to local computer.
 
 ```bash
@@ -36,7 +37,7 @@ python3 setup.py
 ```
 Now search on google, github or exploit-db for exploits.
 
-Here is Already compilied kernel exploits:
+Some compilied kernel exploits:
 ```
 https://github.com/SecWiki/windows-kernel-exploits
 ```
