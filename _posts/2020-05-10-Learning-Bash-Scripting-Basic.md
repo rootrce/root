@@ -4,7 +4,6 @@ title: "Basic syntax for Bash Scripting"
 categories: linux
 toc: true
 toc_sticky: true
-classes: wide
 ---
 
 In this post i will keep some note about basic of bash scripting. 
