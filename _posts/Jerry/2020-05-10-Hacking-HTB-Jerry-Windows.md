@@ -6,7 +6,6 @@ classes: wide
 ---
 
 Machine: Jerry
-
 Ip: 10.10.10.95
 
 
