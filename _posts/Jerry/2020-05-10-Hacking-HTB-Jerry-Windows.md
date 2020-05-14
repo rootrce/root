@@ -27,7 +27,7 @@ PORT     STATE SERVICE VERSION
 
 ```
 
-This version is vulnerable to war file upload( ![CVE LINK](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-12617)). To exploit this we need creds info. 
+This version is vulnerable to war file upload( [CVE LINK](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-12617)). To exploit this we need creds info. 
 
 I found the default creds in ```http://10.10.10.95/manager```:
 ```
